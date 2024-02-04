@@ -20,8 +20,7 @@ def play_again():
     else:
         print("Please type a correct response (Y/N)")
         play_again()
-def choices_list():
-    print(f"Choices were :  \n-Player  : {player_choice} \n-Pc : {pc_choice}")
+
 def playing ():
     def choices_list():
         print(f"Choices were :  \n-Player  : {player_choice} \n-Pc : {pc_choice}")
