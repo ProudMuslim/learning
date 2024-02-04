@@ -27,10 +27,10 @@ def playing ():
     while True :
         pc_choices = ["rock","paper","scissors"]
         pc_choice = random.choice(pc_choices)
-        player_choice = input("Chose between ('rock','paper','scissor') or type 'quit' to exit : ")
-        if player_choice.lower() == "quit":
+        player_choice = (input("Chose between ('rock','paper','scissor') or type 'quit' to exit : ")).lower()
+        if player_choice == "quit":
             sys.exit()
-        if player_choice.lower() != "rock" and player_choice.lower() != "paper" and player_choice.lower() != 'scissors' : 
+        if player_choice != "rock" and player_choice != "paper" and player_choice != 'scissors' : 
             print ("Invalid choice please chose correctly")
             continue
         elif player_choice == "rock" and pc_choice == "rock" : 
